@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <table>
+        <tr>
+            <td>First column</td>
+            <td>Second column</td>
+        </tr>
+        <tr>
+            <td>First column</td>
+            <td>Second column</td>
+        </tr>
+    </table>
+
+    <!--Title cells-->
+
+    <table>
+        <tr>
+            <th>Title of column 1</th>
+            <th>Title of column 2</th>
+        </tr>
+        <tr>
+            <td>Content of column 1</td>
+            <td>Content of column 2</td>
+        </tr>
+    </table>
+
+    <!--Caption of the table-->
+    <table>
+        <caption>Caption of the table</caption>
+        <tr>
+            <th>Title of column 1</th>
+            <th>Title of column 2</th>
+        </tr>
+        <tr>
+            <td>Content of column 1</td>
+            <td>Content of column 2</td>
+        </tr>
+    </table>
+
+    <!--Example of table with <thead>,<tbody> and <tfoot>-->
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Petar</td>
+                <td>Petrov</td>
+            </tr>
+            <tr>
+                <td>Ivan</td>
+                <td>Ivanov</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--Tabele with attributes-->
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Title of column 1</th>
+            <th>Title of column 2</th>
+        </tr>
+        <tr>
+            <td>Content of column 1</td>
+            <td>Content of column 2</td>
+        </tr>
+    </table>
+
+    <!--Table with colspan and rowspan-->
+    <table>
+        <tr>
+            <td colspan="2">Occupies 2 columns</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Occupies 2 rows</td>
+            <td>Occupies 1 row</td>
+        </tr>
+        <tr>
+            <td>Occupies 1 row</td>
+        </tr>
+    </table>
+
+    <!--Using <colgroup and <col>-->
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: red">
+            <col style="background-color: yellow">
+        </colgroup>
+        <tr>
+            <th>Title of column 1</th>
+            <th>Title of column 2</th>
+            <th>Title of column 3</th>
+        </tr>
+        <tr>
+            <td>Content of column 1</td>
+            <td>Content of column 2</td>
+            <td>Content of column 3</td>
+        </tr>
+    </table>
+
+    <!--Nested tables-->
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <td>Cells 1</td>
+            <td>Cells 2</td>
+        </tr>
+        <tr>
+            <td>Nested table - Cell 1</td>
+            <td>Nested table - Cell 2</td>
+        </tr>
+        <tr>
+            <td colspan="2">Nested table - united cell</td>
+        </tr>
+    </table>
+</html>
