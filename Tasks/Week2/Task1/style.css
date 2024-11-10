@@ -1,7 +1,13 @@
 * {
     box-sizing: border-box;
 }
-/* ?? why box-sizing and every time? */
+
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
 
 :root {
     font-family: sans-serif;
@@ -80,16 +86,12 @@ input[type="text"] {
     background-color: lightyellow;
 }
 
-[data-info~="example"] {
-    color: aquamarine;
-}
-
-label[lang|="bg"] {
-    background-color: lightblue;
-}
-
 input::placeholder {
     color: hotpink;
+}
+
+#name {
+    background-color: blue;
 }
 
 input:focus {
@@ -102,31 +104,13 @@ input:disabled {
     cursor: not-allowed;
 }
 
-#name {
-    background-color: blue;
-}
-
-button {
-    margin-top: 1rem;
-    background-color: green;
-    color: white;
-    border: 1px solid black;
-    border-radius: 2rem;
-}
-
-button:hover {
-    background-color: darkgreen;
-    cursor: pointer;
-}
-
-
 a {
     color: green;
     text-decoration: none;
 }
 
 a:hover {
-    color: darkgreen
+    color: darkgreen;
 }
 
 a:visited {
@@ -141,11 +125,14 @@ a[href^="https"] {
     font-weight: bold;
 }
 
-/* Attribute selector with value ending: selects elements with the specified attribute ending with a value */
-a[href$=".pdf"] {
-    font-style: italic;
+button {
+    color: white;
+    background-color: green;
+    border-radius: 2rem;
+    border: 1px solid black;
+    margin-top: 1rem;
 }
 
-a[href*="example"] {
-    text-decoration: underline;
+h1, h2 {
+    font-weight: bold;
 }
