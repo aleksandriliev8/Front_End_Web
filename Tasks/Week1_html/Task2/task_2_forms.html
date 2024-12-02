@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Email:</label>
+                <input type="text" id="lname" name="lname"><br>
+
+                <label for="city">Locaton:</label><br>
+                <input type="radio" id="newyork" name="city" value="New York">
+                <label for="newyork">New York</label><br>
+                
+                <input type="radio" id="losangeles" name="city" value="Los Angeles">
+                <label for="losangeles">Los Angeles</label><br>
+
+                <input type="radio" id="chicago" name="city" value="Chicago">
+                <label for="chicago">Chicago</label><br>
+
+                <input type="radio" id="houston" name="city" value="Houston">
+                <label for="houston">Houston</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Restaurant Experience</legend>
+                <label for="dishes">Favourite Dish:</label>
+                <select id="dishes" name="dishes">
+                    <optgroup label="Appetizer">
+                        <option value="bruschetta">Bruschetta</option>
+                        <option value="calamari">Calamari</option>
+                    </optgroup>
+                    <optgroup label="Main Courses">
+                        <option value="spaghetti">Spaghetti</option>
+                        <option value="lasagna">Lasagna</option>
+                    </optgroup>
+                    <optgroup label="Desserts">
+                        <option value="tiramisu">Tiramisu</option>
+                        <option value="gelato">Gelato</option>
+                    </optgroup>
+                </select><br>
+
+                <label for="services">Additional Services Used:</label><br>
+                <input type="checkbox" id="delivery" name="delivery" value="Delivery">
+                <label for="delivery">Delivery</label><br>
+
+                <input type="checkbox" id="takeout" name="takeout" value="Takeout">
+                <label for="takeout">Takeout</label><br>
+
+                <input type="checkbox" id="dine_in" name="dine_in" value="Dine-in">
+                <label for="dine_in">Dine-in</label><br>
+
+                <label for="feedback">Your Feedback</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" 
+                placeholder="Let us know how we did!">
+                </textarea><br>
+
+                <label for="low">Satisfaction Rating: <label>
+                <input type="range" id = rating name="rating" value="50">
+            </fieldset>
+            <button type="button">Submit Feedback</button>
+        </form>
+    </body>
+</html>
